@@ -12,6 +12,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    implementation 'org.xerial:sqlite-jdbc:3.50.3.0'
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(25)
@@ -20,7 +24,7 @@ java {
 
 javafx {
     version = '25'
-    modules = [ 'javafx.controls' ]
+    modules = ['javafx.controls']
 }
 
 application {
